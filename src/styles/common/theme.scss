@@ -1,0 +1,28 @@
+// $brand-primary: rgb(131, 96, 251);
+
+html{
+  &[data-theme="light"]{
+    --bg: #fff;
+    --card-bg: #FBFCFE;
+    --input-bg: #F0F4F8;
+    --placeholder: #555E68;
+    --input-text: #181819;
+    --text: #181819;
+    --brand: rgb(131, 96, 251);
+    --brand-contrast: #fff;
+    --brand-hover: rgb(110, 78, 212);
+    --border: rgb(131, 96, 251);
+  }
+  &[data-theme="dark"]{
+    --bg: #000;
+    --card-bg: #0B0D0E;
+    --input-bg: #171A1C;
+    --placeholder: #555E68;
+    --input-text: #CDD7E1;
+    --text: #CDD7E1;
+    --brand: rgb(131, 96, 251);
+    --brand-contrast: #fff;
+    --brand-hover: rgb(110, 78, 212);
+    --border: rgb(131, 96, 251);
+  }
+}

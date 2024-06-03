@@ -1,0 +1,60 @@
+form {
+  padding: 3em;
+  border: 3px solid var(--input-bg);
+  border-radius: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  &.form{
+    &--full{
+      width: 100%;
+    }
+    &--regular{
+      width: 800px;
+    }
+    &--slim{
+      width: 500px;
+    }
+  }
+  .form-control {
+    margin-bottom: .25em;
+    display: flex;
+    flex-direction: column;
+  }
+  .form-control:has(> [type="checkbox"]), .radio-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 1em 0;
+    label {
+      order: 1;
+      margin-bottom: 0;
+    }
+    input {
+      order: 0;
+      margin: .33em .5em 0 0;
+    }
+  }
+  label:not([hidden]) {
+    display: block;
+    margin-bottom: .25em;
+  }
+  input:not([type="checkbox"], [type="radio"], [type="file"]), textarea, select {
+    width: 100%;
+    min-height: 2.5rem;
+    padding: 0 .75em;
+    border-radius: 4px;
+    background-color: var(--input-bg);
+    border: 0;
+    color: var(--input-text);
+  }
+  [type="submit"]{
+    display: block;
+    width: 100%;
+    // max-width: 500px;
+    margin: .5em auto;
+  }
+  [type="file"] {
+    min-height: 2rem;
+  }
+}
