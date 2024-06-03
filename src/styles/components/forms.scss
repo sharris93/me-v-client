@@ -3,7 +3,8 @@ form {
   border: 3px solid var(--input-bg);
   border-radius: 20px;
   max-width: 100%;
-  margin: 0 auto;
+  margin: 1em auto;
+  background-color: var(--card-bg);
   &.form{
     &--full{
       width: 100%;
@@ -15,8 +16,11 @@ form {
       width: 500px;
     }
   }
+  h2 {
+    margin-top: 0;
+  }
   .form-control {
-    margin-bottom: .25em;
+    margin-bottom: .5em;
     display: flex;
     flex-direction: column;
   }
@@ -29,10 +33,11 @@ form {
     label {
       order: 1;
       margin-bottom: 0;
+      font-size: .9em;
     }
     input {
       order: 0;
-      margin: .33em .5em 0 0;
+      margin: 2.5px .5em 0 0;
     }
   }
   label:not([hidden]) {
@@ -57,4 +62,8 @@ form {
   [type="file"] {
     min-height: 2rem;
   }
+}
+
+.form-switch {
+  font-size: .9em;
 }

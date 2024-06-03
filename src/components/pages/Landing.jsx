@@ -11,7 +11,7 @@ export default function Landing(){
       {form === 'register' ? 
         <>
           <Register />
-          <p className='switch-form'>
+          <p className='form-switch text-center'>
             Already have an account?&nbsp;
             <span className='link' onClick={() => setForm('login')}>Log in</span>
           </p>
@@ -19,7 +19,7 @@ export default function Landing(){
         :
         <>
           <Login />
-          <p className='switch-form text-center'>
+          <p className='form-switch text-center'>
             Don&apos;t have an account yet?&nbsp;
             <span className='link' onClick={() => setForm('register')}>Create an account</span></p>
         </>
